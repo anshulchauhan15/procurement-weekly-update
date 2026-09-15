@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anshul's Weekly Update</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-brand">
+
+            <img
+                src="gsk-logo.png"
+                alt="GSK"
+                class="gsk-logo"
+            >
+
+            <div class="header-title">
+
+                <div class="eyebrow">
+                    ANSHUL'S WEEKLY UPDATE
+                </div>
+
+                <h1>Project Tracker</h1>
+
+                <p class="subtitle">
+                    Project progress, key stakeholders and remarks
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-meta">
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    MANAGER
+                </span>
+
+                <span
+                    class="meta-value"
+                    id="manager"
+                >
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="meta-divider"></div>
+
+
+            <div class="meta-item">
+
+                <span class="meta-label">
+                    LAST UPDATED
+                </span>
+
+                <span
+                    class="meta-value"
+                    id="last-updated"
+                >
+                    —
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PROJECT NAVIGATION ================= -->
+
+    <nav
+        class="project-navigation project-tabs"
+        aria-label="Project navigation"
+    >
+
+        <!-- Project tabs are generated automatically from Excel -->
+
+    </nav>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-container">
+
+        <!-- PROJECT HEADER -->
+
+        <section class="project-heading">
+
+            <div>
+
+                <span class="section-number">
+                    PROJECT
+                </span>
+
+                <h2 id="project-name">
+                    Loading...
+                </h2>
+
+            </div>
+
+
+            <div class="project-indicator">
+
+                <span class="indicator-dot"></span>
+
+                Active Project
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TIMELINE ================= -->
+
+        <section class="content-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Project Timeline
+                    </h3>
+
+                </div>
+
+
+                <span class="section-description">
+                    Key milestones and current progress
+                </span>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Activity
+                            </th>
+
+                            <th>
+                                Target Date
+                            </th>
+
+                            <th>
+                                Actual Completion Date
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Remarks
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="timeline-body">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INFORMATION CARDS ================= -->
+
+        <div class="information-grid">
+
+
+            <!-- STAKEHOLDERS -->
+
+            <section class="info-card">
+
+                <div class="card-header">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Stakeholders
+                    </h3>
+
+                </div>
+
+
+                <div
+                    id="stakeholders"
+                    class="stakeholder-list"
+                >
+                </div>
+
+            </section>
+
+
+            <!-- COMMITTED SPEND -->
+
+            <section class="info-card spend-card">
+
+                <div class="card-header">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Committed Spend
+                    </h3>
+
+                </div>
+
+
+                <div
+                    class="spend-value"
+                    id="committed-spend"
+                >
+                    —
+                </div>
+
+
+                <div class="spend-label">
+                    Total committed spend
+                </div>
+
+            </section>
+
+
+            <!-- REMARKS -->
+
+            <section class="info-card remarks-card">
+
+                <div class="card-header">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Remarks
+                    </h3>
+
+                </div>
+
+
+                <p id="project-remarks">
+                    —
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        Anshul's Weekly Update
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

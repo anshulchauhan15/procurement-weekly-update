@@ -1,0 +1,718 @@
+/* =========================================================
+   COLOUR SYSTEM
+========================================================= */
+
+:root {
+
+    --orange: #e86f2a;
+
+    --orange-light: #fff4ed;
+
+    --orange-border: #f5d8c7;
+
+    --text-dark: #202124;
+
+    --text-medium: #5f646a;
+
+    --text-light: #8b9197;
+
+    --border: #e5e7e9;
+
+    --border-light: #eef0f2;
+
+    --background: #f6f7f8;
+
+    --white: #ffffff;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+body {
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background: var(--background);
+
+    color: var(--text-dark);
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.gsk-logo {
+    width: 105px;
+    height: auto;
+    display: block;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header {
+    background: var(--white);
+
+    padding: 32px 6vw 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    color: var(--orange);
+
+    margin-bottom: 10px;
+}
+
+h1 {
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.8px;
+
+    color: var(--text-dark);
+}
+
+.subtitle {
+
+    margin-top: 8px;
+
+    font-size: 14px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   HEADER META
+========================================================= */
+
+.header-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.meta-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.meta-label {
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    color: var(--text-light);
+}
+
+.meta-value {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #303338;
+}
+
+.meta-divider {
+
+    height: 32px;
+
+    width: 1px;
+
+    background: var(--border);
+}
+
+
+/* =========================================================
+   PROJECT NAVIGATION
+========================================================= */
+
+.project-navigation {
+
+    background: var(--white);
+
+    padding: 0 6vw;
+
+    display: flex;
+
+    gap: 32px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.project-tab {
+
+    border: none;
+
+    background: none;
+
+    padding: 18px 2px 16px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #858b92;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: 0.2s ease;
+}
+
+.project-tab:hover {
+
+    color: var(--text-dark);
+}
+
+.project-tab.active {
+
+    color: var(--orange);
+}
+
+.project-tab.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -1px;
+
+    left: 0;
+
+    right: 0;
+
+    height: 2px;
+
+    background: var(--orange);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.main-container {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 46px 6vw 80px;
+}
+
+
+/* =========================================================
+   PROJECT HEADING
+========================================================= */
+
+.project-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.section-number {
+
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    color: var(--orange);
+
+    margin-bottom: 7px;
+}
+
+.project-heading h2 {
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+.project-indicator {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 12px;
+
+    color: var(--text-light);
+
+    font-weight: 500;
+}
+
+.indicator-dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+}
+
+
+/* =========================================================
+   TIMELINE SECTION
+========================================================= */
+
+.content-section {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 22px;
+}
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    padding: 24px 26px 20px;
+
+    border-bottom: 1px solid var(--border-light);
+}
+
+.section-header > div {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 13px;
+}
+
+.section-header .section-number {
+
+    margin: 0;
+}
+
+.section-header h3,
+.card-header h3 {
+
+    font-size: 14px;
+
+    font-weight: 650;
+
+    color: #303338;
+}
+
+.section-description {
+
+    font-size: 11px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-container {
+
+    overflow-x: auto;
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 12px;
+}
+
+thead {
+
+    background: #fafbfc;
+}
+
+th {
+
+    text-align: left;
+
+    padding: 13px 18px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.1px;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    color: #858b91;
+
+    border-bottom: 1px solid var(--border);
+
+    white-space: nowrap;
+}
+
+td {
+
+    padding: 16px 18px;
+
+    border-bottom: 1px solid #f0f1f2;
+
+    color: #4b5056;
+
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+tbody tr {
+
+    transition: background 0.15s ease;
+}
+
+tbody tr:hover {
+
+    background: #fffaf7;
+}
+
+td:first-child {
+
+    color: #25282c;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS PILLS
+========================================================= */
+
+.status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+}
+
+.status-completed {
+
+    background: #edf6ef;
+
+    color: #4c815d;
+}
+
+.status-progress {
+
+    background: var(--orange-light);
+
+    color: #c45f22;
+}
+
+.status-upcoming {
+
+    background: #f0f1f3;
+
+    color: #737981;
+}
+
+.status-delayed {
+
+    background: #fbecec;
+
+    color: #a45353;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.information-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.4fr;
+
+    gap: 22px;
+}
+
+.info-card {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 24px 25px;
+
+    min-height: 190px;
+}
+
+.card-header {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+}
+
+.card-header .section-number {
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   STAKEHOLDERS
+========================================================= */
+
+.stakeholder-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.stakeholder {
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--orange-border);
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    color: #4b5056;
+
+    background: #fffaf7;
+}
+
+
+/* =========================================================
+   COMMITTED SPEND
+========================================================= */
+
+.spend-card {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.spend-value {
+
+    font-size: 31px;
+
+    font-weight: 600;
+
+    letter-spacing: -1px;
+
+    color: var(--text-dark);
+
+    margin-top: 15px;
+}
+
+.spend-label {
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   REMARKS
+========================================================= */
+
+.remarks-card p {
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #686e75;
+
+    max-width: 520px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 10px;
+
+    color: #a1a6ab;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .top-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .information-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .header-meta {
+
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .top-header,
+    .project-navigation {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+    .main-container {
+
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+    .project-navigation {
+
+        gap: 20px;
+
+        overflow-x: auto;
+    }
+
+    .section-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
